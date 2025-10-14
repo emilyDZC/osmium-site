@@ -3166,3 +3166,40 @@ input, select, textarea {
 		min-width: 0; /* Prevents overflow issues */
 		text-align: center;
 	}
+
+	.centred-content {
+		margin: 0 auto;
+	}
+
+	.bordered-text {
+		border: 1px solid #ccc;
+		padding: 1em;
+		border-radius: 8px;
+		background: #f9f9f9;
+		text-align: left;
+	}
+
+	.screenshot-border {
+		border: 1px solid #ccc;
+		padding: 0.5em;
+		border-radius: 8px;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	}
+
+	.flex-images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.flex-images > div {
+		flex: 1 1 calc(50% - 5px); /* Two items per row with gap */
+		min-width: 0; /* Prevents overflow */
+	}
+
+	@media screen and (max-width: 736px) {
+		.flex-images > div {
+			flex: 1 1 100%; /* Full width on mobile - stacked */
+		}
+	}
