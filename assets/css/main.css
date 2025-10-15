@@ -2494,6 +2494,11 @@ input, select, textarea {
 
 		#intro .content {
 			padding: 0em 3em;
+
+			@media screen and (max-width: 680px) {
+				padding: 0;
+				
+			}
 		}
 
 /* Process / How it works */
