@@ -2207,7 +2207,7 @@ input, select, textarea {
 		border: 1px solid #787777;
 		line-height: 3em;
 		font-size: 1.8em;
-		color: #7C9CD0;
+		color: #7b8faf;
 		text-decoration: none;
 	}
 
@@ -2307,7 +2307,7 @@ input, select, textarea {
 		}
 
 		#nav li.current_page_item > a, #nav li.current_page_item > span {
-			background: #7C9CD0;
+			background: #7b8faf;
 			color: #FFF;
 		}
 
@@ -2477,7 +2477,7 @@ input, select, textarea {
 	#intro {
 		position: relative;
 		padding: 5em 0em 4em 0em;
-		background: #7C9CD0;
+		background: #7b8faf; /* #7C9CD0 */
 		text-align: center;
 		color: #FFF;
 	}
@@ -2498,7 +2498,7 @@ input, select, textarea {
 
 /* Process / How it works */
 		#process {
-			background: #7C9CD0;
+			background: #7b8faf;
 			position: relative;
 			padding: 5em 0em 4em 0em;
 			text-align: center;
@@ -2517,6 +2517,11 @@ input, select, textarea {
 
 		#process .content {
 			padding: 0em 10em;
+
+			@media screen and (max-width: 680px) {
+				padding: 0;
+				
+			}
 		}
 
 		#process strong {
